@@ -1,6 +1,112 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../scss/global.scss";
+main {
+  #overview {
+    height: 400px;
 
-* {
-  background-color: aquamarine;
-  font-size: 1rem;
+    #describe {
+      background-image: url("../img/IMD-banner.jpg");
+      background-size: 140% auto;
+      background-position: center;
+      height: 300px;
+      display: table-cell;
+      vertical-align: bottom;
+      p {
+        height: 100px;
+        background-color: white;
+        opacity: 0.7;
+        margin: 0;
+        font-size: 1.5em;
+        line-height: 1.3em;
+        padding: 3px;
+        padding-left: 15px;
+      }
+    }
+    div {
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .btn-primary {
+        background-color: $mintgreen;
+        color: $darkblue;
+      }
+    }
+  }
+  #program-information {
+    margin: 1em;
+    h1 {
+      background-color: $darkblue;
+      color: white;
+      height: 50px;
+      font-size: 1.7em;
+      text-align: left;
+      line-height: 50px;
+      padding: 0 10px;
+    }
+    p {
+      color: $bluegray;
+      font-size: 1.2em;
+    }
+    p:nth-child(3) {
+      color: gray;
+      margin-top: 2em;
+      line-height: 2em;
+    }
+  }
+  #careers-pathways {
+    margin: 1em;
+    h1 {
+      background-color: $darkblue;
+      color: white;
+      height: 50px;
+      font-size: 1.7em;
+      text-align: left;
+      line-height: 50px;
+      padding: 0 10px;
+    }
+    h2 {
+      color: black;
+      font-size: 1.5em;
+    }
+    p {
+      color: $bluegray;
+      font-size: 1.2em;
+    }
+    ol {
+      li {
+        color: $bluegray;
+        font-size: 1.2em;
+      }
+    }
+  }
+  #courses {
+    margin: 1em;
+    h1 {
+      background-color: $darkblue;
+      color: white;
+      height: 50px;
+      font-size: 1.7em;
+      text-align: left;
+      line-height: 50px;
+      padding: 0 10px;
+    }
+    .table {
+      thead:nth-child(1) {
+        background-color: $verylightgreen;
+      }
+    }
+  }
+}
+.table {
+  width: 80% !important;
+  margin: auto;
+}
+.table-striped {
+  border: 1px solid #848484;
+  thead tr {
+    background-color: #7cc9bf !important;
+  }
+  tbody tr:nth-of-type(odd) {
+    background-color: #e0f1ed !important;
+  }
 }
