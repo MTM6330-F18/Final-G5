@@ -1,6 +1,81 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import 'global';
+@import 'main';
+
+$white: hsl(0, 0%, 100%);
+$hoverPurple: hsl(277, 29%, 51%);
+$grey: hsl(287, 5%, 62%);
+$blue: hsl(236, 45%, 25%);
+$black: hsl(0, 0%, 0%);
+$lightGrey: hsl(264, 8%, 87%);
 
 * {
-  background-color: aquamarine;
+  background-color: $white;
   font-size: 1rem;
+}
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  h1 {
+    margin: 30px;
+    text-align: center;
+    color: $blue;
+  }
+  a {
+    color: $black;
+  }
+  .profSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    width: 90%;
+    .button {
+      background-color: $white;
+      border: 1px solid $grey;
+      padding: 10px;
+      border-radius: 10px;
+      width: 120px;
+      text-align: center;
+      &:hover {
+        border: 3px solid $hoverPurple;
+        background-color: $lightGrey;
+      }
+    }
+    .textAllProfPage {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      flex-direction: column;
+      text-align: center;
+      width: 500px;
+    }
+    .profPicture {
+      width: 250px;
+      display: flex;
+      margin: 0 auto;
+      border-radius: 50%;
+      border: 2px solid $grey;
+      &:hover {
+        border: 3px solid $hoverPurple;
+      }
+    }
+  }
+}
+@media screen and (min-width: 560px) {
+  .mainContainer > .profSection {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .prof {
+    width: 300px;
+  }
+  .textAllProfPage {
+    text-align: left;
+    margin-left: 30px;
+  }
 }

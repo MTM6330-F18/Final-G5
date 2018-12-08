@@ -6,37 +6,119 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>professor detail page</title>
     <link rel="stylesheet" href="../css/professor-detail.css" />
+    <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body>
-    <div class="pfofPicture">
-      <img src="img/robert.jpg" alt="Professor Robert L. McKenney" />
+    <header>
+      <div id="logo">
+        <img class="img-responsive" src="../img/LOGO2.png" alt="" />
+      </div>
+      <div id="nav">
+        <input class="hamburger" type="checkbox" /> <span></span> <span></span>
+        <span></span>
+        <div id="links" class="links">
+          <a href="./home.html" class="btn">HOME</a>
+          <a href="./overview.html" class="btn">OVERVIEW</a>
+          <a href="./courses.html" class="course btn"> COURSES</a>
+          <div id="course">
+            <a href="./course-detail.html" class="btn-sm"
+              >Sever-side Web <br />
+              Development</a
+            >
+            <a href="./course-detail.html" class="btn-sm">Web Production</a>
+            <a href="./course-detail.html" class="btn-sm">Motion Graphics</a>
+          </div>
+          <a href="./professor.html" class="professor btn">PROFESSORS</a>
+          <div id="professor">
+            <a href="./professor-detail.html" class="btn-sm"
+              >Michael Alan <br />
+              Eisenbraun</a
+            >
+            <a href="./professor-detail.html" class="btn-sm"
+              >Robert L. McKenney</a
+            >
+            <a href="./professor-detail.html" class="btn-sm">Hussein Tayran</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="mainContainer">
+      <div class="profPicture">
+        <img src="../img/robert.jpeg" alt="Professor Robert L. McKenney" />
+      </div>
+
+      <div class="namePlusEmail">
+        <h1>Robert L. McKenney</h1>
+        <h6 class="centered">
+          Course: Web Production<br />
+          Email: mckennr@algonquincollege.com<br />
+          Twitter: @RLMcKenney<br />
+          Github: rlmckenney<br />
+          Oﬃce: J313 - by appointment only<br />
+        </h6>
+      </div>
+
+      <div class="bodyText">
+        <p>
+          Robert McKenney is an entrepreneur with over 25 years of experience in
+          successfully using technology to ﬁnd creative and elegant solutions to
+          complex business problems. He has been hands-on in developing websites
+          and web applications since 1994.<br />
+          <br />
+          Robert can approach any given challenge with a strong mix of both
+          creative and technical skills, leading to a more well-rounded,
+          customer experience focused solution. Robert’s infectious enthusiasm
+          helps him communicate that vision effectively with many different
+          audiences.<br />
+          <br />
+          Robert McKenney can quickly see the broad strategic vision and then
+          effectively articulate that in terms of speciﬁc implementation details
+          relevant to each team member – helping them to understand the
+          importance of their contribution to the whole project.<br />
+          A love of life-long learning drives Robert to continually expand his
+          knowledge of the ever-changing information technology industry. And,
+          he is equally delighted by the opportunity to learn more about his
+          client’s business domain so that he can better serve them.
+        </p>
+      </div>
     </div>
 
-    <h1>Robert L. McKenney</h1>
-    <p class="centered">
-      Course: Web Production<br />
-      Email: mckennr@algonquincollege.com<br />
-      Twitter: @RLMcKenney<br />
-      Github: rlmckenney<br />
-      Oﬃce: J313 - by appointment only<br />
-    </p>
-    <p>
-      Robert McKenney is an entrepreneur with over 25 years of experience in
-      successfully using technology to ﬁnd creative and elegant solutions to
-      complex business problems. He has been hands-on in developing websites and
-      web applications since 1994.<br />
-      Robert can approach any given challenge with a strong mix of both creative
-      and technical skills, leading to a more well-rounded, customer experience
-      focused solution. Robert’s infectious enthusiasm helps him communicate
-      that vision effectively with many different audiences.<br />
-      Robert McKenney can quickly see the broad strategic vision and then
-      effectively articulate that in terms of speciﬁc implementation details
-      relevant to each team member – helping them to understand the importance
-      of their contribution to the whole project.<br />
-      A love of life-long learning drives Robert to continually expand his
-      knowledge of the ever-changing information technology industry. And, he is
-      equally delighted by the opportunity to learn more about his client’s
-      business domain so that he can better serve them.
-    </p>
+    <footer>
+      <p id="c-info">
+        Algonquin College <br />
+        1385 Woodroffe Avenue <br />
+        Ottawa, Ontario K2G 1V8 <br />
+        613-727-4723
+      </p>
+      <div id="pictures">
+        <img class="img-responsive" src="../img/algonquinlogo.png" alt="" />
+        <div id="social">
+          <img class="img-responsive" src="../img/icon_facebook.png" alt="" />
+          <img class="img-responsive" src="../img/icon_linkedin.png" alt="" />
+          <img class="img-responsive" src="../img/icon_twitter.png" alt="" />
+        </div>
+      </div>
+
+      <p class="copyright">
+        ©2018 Algonquin College of Applied Arts and Technology
+      </p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $('.hamburger').click(function() {
+          $('#links').slideToggle(500)
+        })
+        $('.course').mouseenter(function() {
+          $('#course').slideToggle(500)
+        })
+        $('.professor').mouseenter(function() {
+          $('#professor').slideToggle(500)
+        })
+      })
+    </script>
   </body>
 </html>
