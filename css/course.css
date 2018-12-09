@@ -6312,6 +6312,82 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+main {
+  margin: 0 auto; }
+  main #overview #describe {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1920px;
+    height: 300px;
+    display: table-cell;
+    vertical-align: bottom; }
+    main #overview #describe p {
+      background-color: white;
+      opacity: 0.7;
+      margin: 0;
+      font-size: 1.5em;
+      line-height: 1.3em;
+      padding: 1rem 0;
+      padding-left: 15px; }
+
+@media screen and (min-width: 768px) {
+  main #overview #describe {
+    padding: 0;
+    vertical-align: -webkit-baseline-middle;
+    padding: 10% 20%; }
+    main #overview #describe p {
+      font-size: 2rem;
+      padding: 2rem;
+      text-align: center; } }
+
 * {
-  background-color: aquamarine;
   font-size: 1rem; }
+
+main #overview #describe {
+  background-image: url("../img/schedule.jpg"); }
+
+main .course_list {
+  max-width: 1240px;
+  margin: 0 auto; }
+  main .course_list section {
+    background-color: white;
+    min-width: 300px; }
+  main .course_list .title {
+    background-color: #272465;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    main .course_list .title h2 {
+      margin: 0;
+      font-size: 1.2rem; }
+    main .course_list .title .more {
+      color: white; }
+  main .course_list .schedule {
+    padding: 0.5rem 1rem; }
+    main .course_list .schedule h3 {
+      font-size: 1.2rem; }
+    main .course_list .schedule p {
+      color: #55557a;
+      font-size: 1.1rem;
+      margin: 0; }
+
+@media screen and (min-width: 768px) {
+  main .course_list {
+    margin: 0 auto;
+    flex-wrap: wrap;
+    display: flex;
+    align-content: space-between;
+    max-width: 1240px;
+    padding: 0 auto; }
+    main .course_list h2 {
+      font-size: 2rem; }
+    main .course_list section {
+      margin: 1rem;
+      margin-bottom: 0;
+      width: 45%;
+      display: inline-block; }
+    main .course_list .more:hover {
+      color: #80d1c7; } }
