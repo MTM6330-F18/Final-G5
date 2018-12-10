@@ -1,13 +1,7 @@
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import 'global';
-@import 'main';
-
-$white: hsl(0, 0%, 100%);
-$hoverPurple: hsl(277, 29%, 51%);
-$grey: hsl(287, 5%, 62%);
 
 * {
-  background-color: $white;
   font-size: 1rem;
 }
 .mainContainer {
@@ -16,36 +10,40 @@ $grey: hsl(287, 5%, 62%);
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin: 1rem auto;
+  max-width: 1000px;
+  .profPicture {
+    img {
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+      border: 2px solid $bluegray;
+      border-radius: 50%;
+      width: 250px;
+      height: 250px;
+    }
+  }
   .namePlusEmail {
     text-align: center;
+    h1 {
+      margin: 20px;
+    }
   }
-  .bodyText {
+  p {
     padding: 15px;
+    font-size: 1.1rem;
   }
-  .profPicture > img {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-    border: 2px solid $grey;
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-  }
-  h1 {
-    margin: 20px;
-  }
+
   .centered {
-    margin: 20px;
     text-align: center;
     line-height: 1.7rem;
     justify-content: center;
   }
   p {
-    padding: 30px;
     text-align: justify;
   }
 }
-@media screen and (min-width: 560px) {
+@media screen and (min-width: 768px) {
   .bodyText {
     width: 80%;
   }
