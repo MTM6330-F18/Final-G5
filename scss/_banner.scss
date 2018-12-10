@@ -1,0 +1,40 @@
+@import 'global';
+main {
+  margin: 0 auto;
+  #overview {
+    #describe {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 1920px;
+      height: 300px;
+      display: table-cell;
+      vertical-align: bottom;
+      p {
+        background-color: white;
+        opacity: 0.7;
+        margin: 0;
+        font-size: 1.5em;
+        line-height: 1.3em;
+        padding: 1rem 0;
+        padding-left: 15px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  main {
+    #overview {
+      #describe {
+        padding: 0;
+        vertical-align: -webkit-baseline-middle;
+        padding: 10% 20%;
+        p {
+          font-size: 2rem;
+          padding: 2rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
