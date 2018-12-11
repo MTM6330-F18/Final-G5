@@ -12,7 +12,9 @@
     <div id="popup" style="display:none"></div>
     <header>
       <div id="logo">
-        <img class="img-responsive" src="../img/LOGO2.png" alt="" />
+        <a href="./home.html"
+          ><img class="img-responsive" src="../img/LOGO2.png" alt=""
+        /></a>
       </div>
       <div id="nav">
         <input class="hamburger" type="checkbox" /> <span></span> <span></span>
@@ -467,17 +469,7 @@
 
     <script>
       $(document).ready(function() {
-        var obj = $("#level");
-
-        obj.on("change", function() {
-          var checkText = $("#level")
-            .find("option:selected")
-            .text();
-          var val = $("#level").val();
-
-          $("#option table").hide();
-          $("#" + "table" + val + "").show();
-        });
+        // nav bar
         if ($(window).width() > 753) {
           // $("#links").css("display", "flex");
           $(".course").mouseenter(function() {
@@ -517,6 +509,19 @@
             $("#links").fadeOut(500);
           });
         }
+        // courses form
+        var obj = $("#level");
+
+        obj.on("change", function() {
+          var checkText = $("#level")
+            .find("option:selected")
+            .text();
+          var val = $("#level").val();
+
+          $("#option table").hide();
+          $("#" + "table" + val + "").show();
+        });
+        //  apply button
         $("#apply").click(popOne);
         const popUp = $("#popup");
         const container = $("body");
@@ -524,14 +529,14 @@
           popUp.append(`<button id="close">X</button>`);
 
           popUp.append(` <form action="">
-                                                                        First name:<br />
-                                                                        <input type="text" name="firstname" value="" /> <br />
-                                                                         Last name:<br />
-                                                                        <input type="text" name="lastname" value="" /> <br /><br />
-                                                                         Content:<br />
-                                                                        <textarea id="content"></textarea> <br /><br />
-                                                                        <input type="submit" value="Submit" />
-                                                                        </form>`);
+                                                                                    First name:<br />
+                                                                                    <input type="text" name="firstname" value="" /> <br />
+                                                                                     Last name:<br />
+                                                                                    <input type="text" name="lastname" value="" /> <br /><br />
+                                                                                     Content:<br />
+                                                                                    <textarea id="content"></textarea> <br /><br />
+                                                                                    <input type="submit" value="Submit" />
+                                                                                    </form>`);
           popUp.show();
           $("#close").click(function() {
             popUp.hide();

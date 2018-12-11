@@ -1,4 +1,74 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "global";
+@import "banner";
 * {
-  background-color: aquamarine;
   font-size: 1rem;
+}
+
+main {
+  #overview {
+    #describe {
+      background-image: url("../img/schedule.jpg");
+    }
+  }
+
+  .course_list {
+    max-width: 1240px;
+    margin: 0 auto;
+    section {
+      background-color: white;
+      min-width: 300px;
+    }
+    .title {
+      background-color: $darkblue;
+      color: white;
+      padding: 0.5rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h2 {
+        margin: 0;
+        font-size: $h2;
+      }
+      .more {
+        color: white;
+      }
+    }
+    .schedule {
+      padding: 0.5rem 1rem;
+      h3 {
+        font-size: 1.2rem;
+      }
+      p {
+        color: $bluegray;
+        font-size: $p;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    .course_list {
+      margin: 0 auto;
+      flex-wrap: wrap;
+      display: flex;
+      align-content: space-between;
+      max-width: 1240px;
+      padding: 0 auto;
+      h2 {
+        font-size: 2rem;
+      }
+      section {
+        margin: 1rem;
+        margin-bottom: 0;
+        width: 45%;
+        display: inline-block;
+      }
+      .more:hover {
+        color: $mintgreen;
+      }
+    }
+  }
 }

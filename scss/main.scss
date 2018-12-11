@@ -1,7 +1,7 @@
 // insert bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-@import "../scss/global.scss";
+@import "global";
 
 // whole page
 * {
@@ -15,6 +15,7 @@ header {
     margin: 0 5px;
     img {
       height: 50px;
+      margin: 0 10px;
     }
   }
   #nav {
@@ -241,15 +242,16 @@ footer {
       text-align: right;
       margin: 1em 0;
       margin-right: 2em;
+
       img {
-        margin-bottom: 1em;
-        width: 50%;
+        align-items: right;
+        margin-right: 10%;
       }
       #social {
-        .img-responsive {
-          width: 50px;
-          height: auto;
-        }
+        float: right;
+        padding-right: 0;
+        align-items: right;
+        margin-right: 10%;
       }
     }
     .copyright {
