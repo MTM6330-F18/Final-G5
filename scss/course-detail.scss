@@ -1,4 +1,57 @@
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import 'global';
+@import 'banner';
 * {
-  background-color: aquamarine;
   font-size: 1rem;
+}
+main {
+  #overview {
+    #describe {
+      background-image: url('https://www.indianic.com/wp-content/uploads/2016/07/xwebdevelopment-bg.jpg.pagespeed.ic.XvNIZ7eeOl.jpg');
+    }
+  }
+  section {
+    // margin: 1em;
+    h2 {
+      background-color: $darkblue;
+      color: white;
+      height: 50px;
+      font-size: $h2;
+      text-align: left;
+      line-height: 50px;
+      padding: 0 10px;
+    }
+    p,
+    a {
+      padding: 1rem;
+      color: $bluegray;
+      font-size: 1.1em;
+    }
+
+    table {
+      width: 80% !important;
+      margin: auto;
+      border: 1px solid #cbcbcb;
+      thead tr {
+        background-color: #7cc9bf !important;
+      }
+      tbody tr:nth-of-type(odd) {
+        background-color: #e0f1ed !important;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  main {
+    .course_info {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      max-width: 1240px;
+      h2 {
+        font-size: $h2;
+      }
+    }
+  }
 }

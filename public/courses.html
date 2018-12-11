@@ -9,6 +9,164 @@
     <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body>
-    <h1></h1>
+    <header>
+      <div id="logo">
+       <a href="./home.html"> <img class="img-responsive" src="../img/LOGO2.png" alt="" /></a>
+      </div>
+      <div id="nav">
+        <input class="hamburger" type="checkbox" /> <span></span> <span></span>
+        <span></span>
+        <div id="links" class="links">
+          <a href="./home.html" class="btn">HOME</a>
+          <a href="./overview.html" class="btn">OVERVIEW</a>
+          <a href="./courses.html" class="course btn"> COURSES</a>
+          <div id="course">
+            <a href="sever-side.html" class="btn-sm"
+              >Sever-side Web <br />
+              Development</a>
+            <a href="webproduction.html" class="btn-sm">Web Production</a>
+            <a href="motiongraphics.html" class="btn-sm">Motion Graphics</a>
+          </div>
+          <a href="./professor.html" class="professor btn">PROFESSORS</a>
+          <div id="professor">
+            <a href="professor-detail-michael.html" class="btn-sm"
+              >Michael Alan <br />
+              Eisenbraun</a
+            >
+            <a href="professor-detail-robert.html" class="btn-sm"
+              >Robert L. McKenney</a
+            >
+            <a href="professor-detail-hussein.html" class="btn-sm"
+              >Hussein Tayran</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+        <div id="overview">
+            <div id="describe">
+              <p>
+                  Courses schedule</br>
+                  Interactive media design <br>
+                  Fall 2018  </p>
+            </div>           
+          </div>
+        <div class="course_list">
+          <section class="web production">
+            <div class="title">
+              <h2>Web production</h2>
+               <a href="webproduction.html" class="more">More info ></a>
+            </div> 
+           <div class="schedule">
+              <h3>Schedule</h3>
+              <p>
+                Section 010: Wednesday 13:00 - 16:00 </br>
+                Section 020: Tuesday 9:00 -
+                12:00 </br>
+                Section 030: Tuesday 12:00 - 15:00 </br>Location: Room T232
+              </p>
+            </div>
+        </section>
+        <section class="Server-side development">
+            <div class="title">
+                <h2>Server-side development</h2>
+                <a href="sever-side.html" class="more" >More info ></a>
+            </div> 
+          <div class="schedule">
+              <h3>Schedule</h3>
+            <p>
+                Section 310: Fridays 8:00 AM - 11:00 AM</br>
+                Section 320: Mondays 8:00 AM - 11:00 AM</br>
+                Section 330: Wednesdays 9:30 AM - 11:00 AM</br>
+                Location: Room T232 </p>
+          </div>
+        </section>
+        <section class="Motion graphic">
+            <div class="title">
+                <h2>Motion graphic</h2>
+                  <a href="motiongraphics.html" class="more" >More info ></a>
+            </div> 
+          <div class="schedule">
+              <h3>Schedule</h3>
+            <p>
+                Section 010: Wednesday 09:00 - 12:00
+                <br>Section 020: Tuesday 13:00 - 16:00
+                <br>Section 030: Tuesday 09:00 - 12:00
+                <br>Location: Room T308
+                </p>
+          </div>
+        </section>
+        
+        <section class="Applied project">
+            <div class="title">
+                <h2>Applied project</h2>
+            </div> 
+          <div class="schedule">
+              <h3>Schedule</h3>
+            <p>
+                Section 010: Tuesday 8:30 - 12:30 </br>
+                Section 020: Tuesday 9:00 -
+                12:00 </br>
+                Section 030: Tuesday 12:00 - 15:00 </br>Location: Room T229
+            </p>
+          </div>
+        </section>
+        <section class="Project management">
+            <div class="title">
+                <h2>Project management</h2>            </div> 
+          <div class="schedule">
+              <h3>Schedule</h3>
+          
+            <p>
+                Section 010: Monday 8:00 - 10:00 </br>
+                Section 020: Monday 9:00 -
+                12:00 </br>
+                Section 030: Tuesday 12:00 - 15:00 </br>Location: Room T229
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+        <p id="c-info">
+          Algonquin College <br />
+          1385 Woodroffe Avenue <br />
+          Ottawa, Ontario K2G 1V8 <br />
+          613-727-4723
+        </p>
+        <div id="pictures">
+          <a href="http://www.algonquincollege.com/"
+            ><img
+              class="img-responsive ac_logo"
+              src="../img/footerLogo.png"
+              alt=""
+          /></a>
+          <div id="social">
+           <a href="http://www.facebook.com"> <img class="img-responsive" src="../img/icon_facebook.png" alt="" /></a>
+           <a href="http://www.linkedin.com"> <img class="img-responsive" src="../img/icon_linkedin.png" alt="" /></a>
+            <a href="http://www.twitter.com"> <img class="img-responsive" src="../img/icon_twitter.png" alt="" /></a>
+          </div>
+        </div>
+  
+        <p class="copyright">
+          ©2018 Algonquin College of Applied Arts and Technology
+        </p>
+      </footer>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $('.hamburger').click(function() {
+          $('#links').slideToggle(500)
+        })
+        $('.course').mouseenter(function() {
+          $('#course').slideToggle(500)
+        })
+
+        $('.professor').mouseenter(function() {
+          $('#professor').slideToggle(500)
+        })
+      })
+    </script>
   </body>
 </html>
