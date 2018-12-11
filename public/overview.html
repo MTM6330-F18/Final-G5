@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body>
+    <div id="popup" style="display:none"></div>
     <header>
       <div id="logo">
         <img class="img-responsive" src="../img/LOGO2.png" alt="" />
@@ -44,13 +45,21 @@
     </header>
     <main>
       <div id="overview">
-        <div id="describe">
-          <p>
-            Learn to create engaging digital media with audio, video, graphical,
-            and web technologies.
-          </p>
+        <div id="banner">
+          <img class="img" src="../img/IMD-banner.jpg" alt="Responsive image" />
         </div>
-        <div><a href="#" class="btn-primary btn-lg">Apply Now</a></div>
+        <div id="describe">
+          <div class="text">
+            <p>
+              Learn to create engaging digital media with audio, video,
+              graphical, and web technologies.
+            </p>
+          </div>
+
+          <div class="apply">
+            <a id="apply" href="#" class=" btn-primary btn-lg">Apply Now</a>
+          </div>
+        </div>
       </div>
       <div id="program-information">
         <h1>Program Information</h1>
@@ -133,39 +142,233 @@
       </div>
       <div id="courses">
         <h1>Courses</h1>
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th>名称</th>
-              <th>城市</th>
-              <th>邮编</th>
-            </tr>
-          </thead>
-          <thead>
-            <tr>
-              <th>名称</th>
-              <th>城市</th>
-              <th>邮编</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Tanmay</td>
-              <td>Bangalore</td>
-              <td>560001</td>
-            </tr>
-            <tr>
-              <td>Sachin</td>
-              <td>Mumbai</td>
-              <td>400003</td>
-            </tr>
-            <tr>
-              <td>Uma</td>
-              <td>Pune</td>
-              <td>411027</td>
-            </tr>
-          </tbody>
-        </table>
+        <select name="level" id="level" class="level">
+          <option value="1">Level 1</option>
+          <option value="2">Level 2</option>
+          <option value="3">Level 3</option>
+          <option value="4">Level 4</option>
+        </select>
+        <div id="option">
+          <table
+            id="table1"
+            class="table table-md table-hover table-borderless"
+          >
+            <thead class="head1">
+              <tr>
+                <th>Level 1</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <thead class="head2">
+              <tr>
+                <th>Code</th>
+                <th>Course Name</th>
+                <th>Hours</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>DSN2100M</td>
+                <td>Design Thinking</td>
+                <td>45.0</td>
+              </tr>
+              <tr>
+                <td>MTM6100</td>
+                <td>Introduction to DSLR</td>
+                <td>60.0</td>
+              </tr>
+              <tr>
+                <td>MTM6130</td>
+                <td>Responsive Web design</td>
+                <td>60.0</td>
+              </tr>
+              <tr>
+                <td>MTM6160</td>
+                <td>Digital Graphics</td>
+                <td>60.0</td>
+              </tr>
+              <tr>
+                <td>MTM6161</td>
+                <td>Design Foundations</td>
+                <td>60.0</td>
+              </tr>
+            </tbody>
+          </table>
+          <table
+            id="table2"
+            style="display:none"
+            class="table table-md table-hover table-borderless"
+          >
+            <thead class="head1">
+              <tr>
+                <th>Level 2</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <thead class="head2">
+              <tr>
+                <th>Code</th>
+                <th>Course Name</th>
+                <th>Hours</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ENL1813M</td>
+                <td>Communications 1</td>
+                <td>45.0</td>
+              </tr>
+              <tr>
+                <td>MTM6200</td>
+                <td>Video Foundations</td>
+                <td>90.0</td>
+              </tr>
+              <tr>
+                <td>MTM6230</td>
+                <td>Client-Side Web Development</td>
+                <td>60.0</td>
+              </tr>
+              <tr>
+                <td>MTM6231</td>
+                <td>Content Management Systems 1</td>
+                <td>45.0</td>
+              </tr>
+              <tr>
+                <td>MTM6260</td>
+                <td>User Experience Design</td>
+                <td>60.0</td>
+              </tr>
+              <tr>
+                <td>GED6149</td>
+                <td>General Education Elective</td>
+                <td>45.0</td>
+              </tr>
+            </tbody>
+          </table>
+          <table
+            id="table3"
+            style="display:none"
+            class="table table-md table-hover table-borderless"
+          >
+            <thead class="head1">
+              <tr>
+                <th>Level 3</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <thead class="head2">
+              <tr>
+                <th>Code</th>
+                <th>Course Name</th>
+                <th>Hours</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>MTM6300</td>
+                <td>Motion Graphics</td>
+                <td>45.0</td>
+              </tr>
+              <tr>
+                <td>MTM6330</td>
+                <td>Web Production</td>
+                <td>45.0</td>
+              </tr>
+              <tr>
+                <td>MTM6331</td>
+                <td>Server-Side Web Development</td>
+                <td>60.0</td>
+              </tr>
+              <tr>
+                <td>MTM6360</td>
+                <td>Applied Projects 1</td>
+                <td>90.0</td>
+              </tr>
+              <tr>
+                <td>MTM6361</td>
+                <td>Projcet Management Skills</td>
+                <td>45.0</td>
+              </tr>
+              <tr>
+                <td>GED6149</td>
+                <td>General Education Elective</td>
+                <td>45.0</td>
+              </tr>
+              <tr>
+                <td>MTM6370</td>
+                <td>Co-operative Work Term</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          <table
+            id="table4"
+            style="display:none"
+            class="table table-md table-hover table-borderless"
+          >
+            <thead class="head1">
+              <tr>
+                <th>Level 4</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <thead class="head2">
+              <tr>
+                <th>Code</th>
+                <th>Course Name</th>
+                <th>Hours</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ENL6007</td>
+                <td>Professional Communication for Interactive Media Design</td>
+                <td>45.0</td>
+              </tr>
+              <tr>
+                <td>MTM6460</td>
+                <td>Applied Projects 2</td>
+                <td>90.0</td>
+              </tr>
+              <tr>
+                <td>MTM6461</td>
+                <td>Digital Publishing</td>
+                <td>45.0</td>
+              </tr>
+              <thead class="head2">
+                <tr>
+                  <th>Elective: choose 2</th>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tr>
+                <td>MTM6400</td>
+                <td>Media Production</td>
+                <td>60.0</td>
+              </tr>
+              <tr>
+                <td>MTM6401</td>
+                <td>Web Video Production</td>
+                <td>60.0</td>
+              </tr>
+              <tr>
+                <td>MTM6430</td>
+                <td>Web Applications</td>
+                <td>60.0</td>
+              </tr>
+              <tr>
+                <td>MTM6431</td>
+                <td>Content Management Systems 2</td>
+                <td>60.0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
       <div id="requirements">
         <h1>Requirements</h1>
@@ -236,28 +439,6 @@
           International Health Insurance: $ 696.00 <br />
           <br />
           Fees are subject to change. <br />
-          <br />
-          For further fees information please visit:
-          www.algonquincollege.com/ro. <br />
-          <br />
-          Before beginning the program, students are required to purchase either
-          a Windows or OSX laptop with these minimum specs (cost: $1,200 -
-          $2,000): Intel Core i7 processor 16GB RAM 500GB SSD or HDD internal
-          storage 13 screen (larger preferred). Laptop power supply required for
-          in-class use. <br />
-          <br />
-          Before beginning the program, students need to purchase an external
-          storage device of 1TB or larger which is compatible with their laptop.
-          (cost: $100 - $200). <br />
-          <br />
-          Before beginning the program, students will need to purchase a Canon
-          EOS DSLR Camera with a lens, which is usually sold as a kit. (cost:
-          $500 to $800). The Canon EOS camera kit typically includes an 18-55mm
-          lens (longer zoom range such as 24-105 is preferred but costs more).
-          The Canon camera must have a minimum resolution of 16-megapixels, be
-          capable of RAW and JPEG formats, and be capable of recording full HD
-          video. The camera must be brought to the student`s first photography
-          class.
         </p>
       </div>
     </main>
@@ -269,7 +450,7 @@
         613-727-4723
       </p>
       <div id="pictures">
-        <img class="img-responsive" src="../img/algonquinlogo.png" alt="" />
+        <img class="img-responsive" src="../img/WechatIMG666.png" alt="" />
         <div id="social">
           <img class="img-responsive" src="../img/icon_facebook.png" alt="" />
           <img class="img-responsive" src="../img/icon_linkedin.png" alt="" />
@@ -286,16 +467,77 @@
 
     <script>
       $(document).ready(function() {
-        $(".hamburger").click(function() {
-          $("#links").slideToggle(500);
-        });
-        $(".course").mouseenter(function() {
-          $("#course").slideToggle(500);
-        });
+        var obj = $("#level");
 
-        $(".professor").mouseenter(function() {
-          $("#professor").slideToggle(500);
+        obj.on("change", function() {
+          var checkText = $("#level")
+            .find("option:selected")
+            .text();
+          var val = $("#level").val();
+
+          $("#option table").hide();
+          $("#" + "table" + val + "").show();
         });
+        if ($(window).width() > 753) {
+          // $("#links").css("display", "flex");
+          $(".course").mouseenter(function() {
+            $("#course").fadeIn();
+          });
+          $("#course").mouseenter(function() {
+            $("#course").fadeIn();
+          });
+          $(".course").mouseleave(function() {
+            $("#course").fadeOut();
+          });
+          $("#course").mouseleave(function() {
+            $("#course").fadeOut();
+          });
+
+          $(".professor").mouseenter(function() {
+            $("#professor").fadeIn();
+          });
+          $("#professor").mouseenter(function() {
+            $("#professor").fadeIn();
+          });
+          $(".professor").mouseleave(function() {
+            $("#professor").fadeOut();
+          });
+          $("#professor").mouseleave(function() {
+            $("#professor").fadeOut();
+          });
+        } else {
+          // $("#links").css("display", "none");
+          $(".hamburger").click(function() {
+            $("#links").fadeIn(500);
+          });
+          $("#links").mouseenter(function() {
+            $("#links").fadeIn(500);
+          });
+          $("#links").mouseleave(function() {
+            $("#links").fadeOut(500);
+          });
+        }
+        $("#apply").click(popOne);
+        const popUp = $("#popup");
+        const container = $("body");
+        function popOne() {
+          popUp.append(`<button id="close">X</button>`);
+
+          popUp.append(` <form action="">
+                                                                        First name:<br />
+                                                                        <input type="text" name="firstname" value="" /> <br />
+                                                                         Last name:<br />
+                                                                        <input type="text" name="lastname" value="" /> <br /><br />
+                                                                         Content:<br />
+                                                                        <textarea id="content"></textarea> <br /><br />
+                                                                        <input type="submit" value="Submit" />
+                                                                        </form>`);
+          popUp.show();
+          $("#close").click(function() {
+            popUp.hide();
+            popUp.text(" ");
+          });
+        }
       });
     </script>
   </body>

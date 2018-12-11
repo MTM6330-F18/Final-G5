@@ -115,7 +115,9 @@ footer {
 
     img {
       display: block;
-      margin: 0 auto;
+      margin: 5% auto;
+
+      width: 50%;
     }
     #social {
       display: flex;
@@ -135,7 +137,7 @@ footer {
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   // whole page
   * {
     font-family: $font-stack;
@@ -198,7 +200,7 @@ footer {
           z-index: 1;
           text-align: center;
           a {
-            border: solid 1px gray;
+            border-bottom: solid 1px gray;
           }
         }
         #professor {
@@ -209,7 +211,7 @@ footer {
           top: 60px;
           z-index: 1;
           a {
-            border: solid 1px gray;
+            border-bottom: solid 1px gray;
           }
         }
       }
@@ -241,12 +243,12 @@ footer {
       margin-right: 2em;
       img {
         margin-bottom: 1em;
+        width: 50%;
       }
       #social {
         .img-responsive {
           width: 50px;
           height: auto;
-          margin: 1em;
         }
       }
     }
