@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>professor detail page</title>
+    <link rel="stylesheet" href="../css/professor-detail.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img class="img-responsive" src="../img/LOGO2.png" alt="" />
+      </div>
+      <div id="nav">
+        <input class="hamburger" type="checkbox" /> <span></span> <span></span>
+        <span></span>
+        <div id="links" class="links">
+          <a href="./home.html" class="btn">HOME</a>
+          <a href="./overview.html" class="btn">OVERVIEW</a>
+          <a href="./courses.html" class="course btn"> COURSES</a>
+          <div id="course">
+            <a href="sever-side.html" class="btn-sm"
+              >Sever-side Web <br />
+              Development</a
+            >
+            <a href="webproduction.html" class="btn-sm">Web Production</a>
+            <a href="motiongraphics.html" class="btn-sm">Motion Graphics</a>
+          </div>
+          <a href="./professor.html" class="professor btn">PROFESSORS</a>
+          <div id="professor">
+            <a href="professor-detail-michael.html" class="btn-sm"
+              >Michael Alan <br />
+              Eisenbraun</a
+            >
+            <a href="professor-detail-robert.html" class="btn-sm"
+              >Robert L. McKenney</a
+            >
+            <a href="professor-detail-hussein.html" class="btn-sm"
+              >Hussein Tayran</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="mainContainer">
+      <div class="profPicture">
+        <img src="../img/michael.jpg" alt="Professor Michael Eisenbraun" />
+      </div>
+      <div class="namePlusEmail">
+        <h1>Michael Alan Eisenbraun</h1>
+        <p class="centered">
+          Course: Server Side Web Development<br />
+          Email: eisenbm@algonquincollege.com<br />
+          Oﬃce: J313 - by appointment only<br />
+        </p>
+      </div>
+      <p>
+        I started teaching in January 2016, and it has been a unique and
+        challenging experience, but it comes with its rewards. Of course, what I
+        enjoy most is being able to impact my students and help them achieve.
+        </br>
+        It is not the goal of the IMD program to teach everything you need to
+        know to enter the job market, but to give you a taste of many different
+        opportunities ahead. However, to take advantage of those opportunities,
+        you must not be afraid to try new things and embrace change. In this
+        field, things are changing all the time, and there is a constant array
+        of new things to learn. You can choose to sit by the sidelines or you
+        can be the one who is riding the wave. Those who can accept those
+        challenges will enjoy a long, rewarding career.
+      </p>
+    </div>
+
+    <footer>
+        <p id="c-info">
+          Algonquin College <br />
+          1385 Woodroffe Avenue <br />
+          Ottawa, Ontario K2G 1V8 <br />
+          613-727-4723
+        </p>
+        <div id="pictures">
+          <a href="http://www.algonquincollege.com/"
+            ><img
+              class="img-responsive ac_logo"
+              src="../img/footerLogo.png"
+              alt=""
+          /></a>
+          <div id="social">
+           <a href="http://www.facebook.com"> <img class="img-responsive" src="../img/icon_facebook.png" alt="" /></a>
+           <a href="http://www.linkedin.com"> <img class="img-responsive" src="../img/icon_linkedin.png" alt="" /></a>
+            <a href="http://www.twitter.com"> <img class="img-responsive" src="../img/icon_twitter.png" alt="" /></a>
+          </div>
+        </div>
+  
+        <p class="copyright">
+          ©2018 Algonquin College of Applied Arts and Technology
+        </p>
+      </footer>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $('.hamburger').click(function() {
+          $('#links').slideToggle(500)
+        })
+        $('.course').mouseenter(function() {
+          $('#course').slideToggle(500)
+        })
+        $('.professor').mouseenter(function() {
+          $('#professor').slideToggle(500)
+        })
+      })
+    </script>
+  </body>
+</html>
