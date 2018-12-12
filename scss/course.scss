@@ -1,14 +1,11 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
-@import "global";
-@import "banner";
-* {
-  font-size: 1rem;
-}
+@import 'global';
+@import 'banner';
 
+//start with mobile version
 main {
   #overview {
     #describe {
-      background-image: url("../img/schedule.jpg");
+      background-image: url('../img/schedule.jpg');
     }
   }
 
@@ -47,7 +44,7 @@ main {
     }
   }
 }
-
+//desktop version
 @media screen and (min-width: 768px) {
   main {
     .course_list {

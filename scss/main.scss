@@ -1,11 +1,11 @@
 // insert bootstrap
-@import "../node_modules/bootstrap/scss/bootstrap";
-
-@import "global";
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import 'global';
 
 // whole page
 * {
   font-family: $font-stack;
+  font-size: 1rem;
 }
 // header
 header {
