@@ -31,38 +31,42 @@
     #popup #around p {
       padding: 0.3em; }
 
-main {
-  max-width: 1240px;
-  margin: 0 auto; }
-  main #overview {
-    height: 400px; }
-    main #overview #banner {
+main #background-overview {
+  background-color: #f0f0f0; }
+  main #background-overview #overview {
+    max-width: 1240px;
+    margin: 0 auto; }
+    main #background-overview #overview #banner {
       display: none; }
-    main #overview #describe .text {
+    main #background-overview #overview #describe .text {
       background-image: url("../img/IMD-banner.jpg");
       background-size: 160% auto;
       background-position: center;
       height: 300px;
       display: table-cell;
       vertical-align: bottom; }
-      main #overview #describe .text p {
+      main #background-overview #overview #describe .text p {
         height: 100px;
-        background-color: white;
+        background-color: #f0f0f0;
         opacity: 0.7;
         margin: 0;
         font-size: 1.4em;
         line-height: 1.3em;
         padding: 3px;
         padding-left: 15px; }
-    main #overview .apply {
+    main #background-overview #overview .apply {
       height: 100px;
       display: flex;
       align-items: center;
       justify-content: center; }
-      main #overview .apply .btn-primary {
+      main #background-overview #overview .apply .btn-primary {
         background-color: #80d1c7;
         color: #272465;
         text-decoration: none; }
+
+main #program-information {
+  max-width: 1240px;
+  margin: 0 auto; }
   main #program-information h1 {
     background-color: #272465;
     color: white;
@@ -80,117 +84,124 @@ main {
     color: gray;
     margin-top: 2em;
     line-height: 2em; }
-  main #careers-pathways h1 {
-    background-color: #272465;
-    color: white;
-    height: 50px;
-    font-size: 1.3em;
-    text-align: left;
-    line-height: 50px;
-    padding: 0 10px;
-    margin: 0; }
-  main #careers-pathways h2 {
-    color: black;
-    font-size: 1em;
-    font-weight: bold;
-    margin: 1em;
-    margin-top: 1em;
-    margin-bottom: 0; }
-  main #careers-pathways p {
-    color: #55557a;
-    font-size: 1.1rem;
-    margin: 1em; }
-  main #careers-pathways ol li {
-    color: #55557a;
-    font-size: 1.1rem;
-    margin: 1em; }
-  main #courses h1 {
-    background-color: #272465;
-    color: white;
-    height: 50px;
-    font-size: 1.3em;
-    text-align: left;
-    line-height: 50px;
-    padding: 0 10px;
-    margin: 0; }
-  main #courses .table {
-    width: 100%;
-    margin: auto; }
-    main #courses .table .head1 {
-      background-color: #e0f1ed; }
-    main #courses .table .head2 {
-      background-color: #80d1c7; }
-    main #courses .table tbody {
-      line-height: 1; }
-  main #requirements h1 {
-    background-color: #272465;
-    color: white;
-    height: 50px;
-    font-size: 1.3em;
-    text-align: left;
-    line-height: 50px;
-    padding: 0 10px;
-    margin: 0; }
-  main #requirements h2 {
-    color: black;
-    font-size: 1em;
-    font-weight: bold;
-    margin: 1em;
-    margin-top: 1em;
-    margin-bottom: 0; }
-  main #requirements ul li {
-    color: #55557a;
-    font-size: 1.1rem;
-    margin: 1em; }
-  main #fee-expenses h1 {
-    background-color: #272465;
-    color: white;
-    height: 50px;
-    font-size: 1.3em;
-    text-align: left;
-    line-height: 50px;
-    padding: 0 10px;
-    margin: 0; }
-  main #fee-expenses h2 {
-    color: black;
-    font-size: 1em;
-    font-weight: bold;
-    margin: 1em;
-    margin-top: 1em;
-    margin-bottom: 0; }
-  main #fee-expenses p {
-    color: #55557a;
-    font-size: 1.1rem;
-    margin: 1em; }
+
+main #careers-pathways h1 {
+  background-color: #272465;
+  color: white;
+  height: 50px;
+  font-size: 1.3em;
+  text-align: left;
+  line-height: 50px;
+  padding: 0 10px;
+  margin: 0; }
+
+main #careers-pathways h2 {
+  color: black;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 1em;
+  margin-top: 1em;
+  margin-bottom: 0; }
+
+main #careers-pathways p {
+  color: #55557a;
+  font-size: 1.1rem;
+  margin: 1em; }
+
+main #careers-pathways ol li {
+  color: #55557a;
+  font-size: 1.1rem;
+  margin: 1em; }
+
+main #courses h1 {
+  background-color: #272465;
+  color: white;
+  height: 50px;
+  font-size: 1.3em;
+  text-align: left;
+  line-height: 50px;
+  padding: 0 10px;
+  margin: 0; }
+
+main #courses .table {
+  width: 100%;
+  margin: auto; }
+  main #courses .table .head1 {
+    background-color: #e0f1ed; }
+  main #courses .table .head2 {
+    background-color: #80d1c7; }
+  main #courses .table tbody {
+    line-height: 1; }
+
+main #requirements h1 {
+  background-color: #272465;
+  color: white;
+  height: 50px;
+  font-size: 1.3em;
+  text-align: left;
+  line-height: 50px;
+  padding: 0 10px;
+  margin: 0; }
+
+main #requirements h2 {
+  color: black;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 1em;
+  margin-top: 1em;
+  margin-bottom: 0; }
+
+main #requirements ul li {
+  color: #55557a;
+  font-size: 1.1rem;
+  margin: 1em; }
+
+main #fee-expenses h1 {
+  background-color: #272465;
+  color: white;
+  height: 50px;
+  font-size: 1.3em;
+  text-align: left;
+  line-height: 50px;
+  padding: 0 10px;
+  margin: 0; }
+
+main #fee-expenses h2 {
+  color: black;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 1em;
+  margin-top: 1em;
+  margin-bottom: 0; }
+
+main #fee-expenses p {
+  color: #55557a;
+  font-size: 1.1rem;
+  margin: 1em; }
 
 @media (min-width: 768px) {
-  main #overview {
-    margin: 1em;
+  main #background-overview #overview {
     display: flex;
     height: auto; }
-    main #overview #banner {
+    main #background-overview #overview #banner {
       display: flex;
       justify-content: center;
       align-items: center;
       width: 45%;
       height: 300px;
-      margin-left: 5%;
       overflow: hidden; }
-      main #overview #banner img {
+      main #background-overview #overview #banner img {
         height: 100%;
         width: auto; }
-    main #overview #describe {
-      display: flex;
-      flex-direction: column;
-      padding: 0 3%;
+    main #background-overview #overview #describe {
       width: 60%; }
-      main #overview #describe .text {
+      main #background-overview #overview #describe .text {
         background-image: none;
         height: 200px;
         padding-top: 15%; }
-        main #overview #describe .text p {
+        main #background-overview #overview #describe .text p {
           height: 100px;
-          background-color: white;
+          background-color: #f0f0f0;
           opacity: 0.7;
           margin: 0;
           font-size: 1.4em;
@@ -198,9 +209,9 @@ main {
           padding: 3px;
           padding-left: 15px;
           height: auto; }
-      main #overview #describe .apply {
+      main #background-overview #overview #describe .apply {
         height: 80px; }
-        main #overview #describe .apply .btn-primary {
+        main #background-overview #overview #describe .apply .btn-primary {
           width: 50%;
           text-align: center; }
   main #program-information h1 {

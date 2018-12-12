@@ -48,20 +48,26 @@
       </div>
     </header>
     <main>
-      <div id="overview">
-        <div id="banner">
-          <img class="img" src="../img/IMD-banner.jpg" alt="Responsive image" />
-        </div>
-        <div id="describe">
-          <div class="text">
-            <p>
-              Learn to create engaging digital media with audio, video,
-              graphical, and web technologies.
-            </p>
+      <div id="background-overview">
+        <div id="overview">
+          <div id="banner">
+            <img
+              class="img"
+              src="../img/IMD-banner.jpg"
+              alt="Responsive image"
+            />
           </div>
+          <div id="describe">
+            <div class="text">
+              <p>
+                Learn to create engaging digital media with audio, video,
+                graphical, and web technologies.
+              </p>
+            </div>
 
-          <div class="apply">
-            <a id="apply" href="#" class=" btn-primary btn-lg">Apply Now</a>
+            <div class="apply">
+              <a id="apply" href="#" class=" btn-primary btn-lg">Apply Now</a>
+            </div>
           </div>
         </div>
       </div>
@@ -531,14 +537,14 @@
           popUp.append(`<button id="close">X</button>`)
 
           popUp.append(` <form action="">
-                                                                                          First name:<br />
-                                                                                          <input type="text" name="firstname" value="" /> <br />
-                                                                                           Last name:<br />
-                                                                                          <input type="text" name="lastname" value="" /> <br /><br />
-                                                                                           Content:<br />
-                                                                                          <textarea id="content"></textarea> <br /><br />
-                                                                                          <input type="submit" value="Submit" />
-                                                                                          </form>`)
+                                                                                                                  First name:<br />
+                                                                                                                  <input type="text" name="firstname" value="" /> <br />
+                                                                                                                   Last name:<br />
+                                                                                                                  <input type="text" name="lastname" value="" /> <br /><br />
+                                                                                                                   Content:<br />
+                                                                                                                  <textarea id="content"></textarea> <br /><br />
+                                                                                                                  <input type="submit" value="Submit" />
+                                                                                                                  </form>`)
           popUp.show()
           $('#close').click(function() {
             popUp.hide()
