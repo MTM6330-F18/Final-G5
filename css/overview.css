@@ -60,38 +60,38 @@ main {
     #popup #around p {
       padding: 0.3em; }
 
-main #overview {
-  height: 400px; }
-  main #overview #banner {
-    display: none; }
-  main #overview #describe .text {
-    background-image: url("../img/IMD-banner.jpg");
-    background-size: 160% auto;
-    background-position: center;
-    height: 300px;
-    display: table-cell;
-    vertical-align: bottom; }
-    main #overview #describe .text p {
+main {
+  max-width: 1240px;
+  margin: 0 auto; }
+  main #overview {
+    height: 400px; }
+    main #overview #banner {
+      display: none; }
+    main #overview #describe .text {
+      background-image: url("../img/IMD-banner.jpg");
+      background-size: 160% auto;
+      background-position: center;
+      height: 300px;
+      display: table-cell;
+      vertical-align: bottom; }
+      main #overview #describe .text p {
+        height: 100px;
+        background-color: white;
+        opacity: 0.7;
+        margin: 0;
+        font-size: 1.4em;
+        line-height: 1.3em;
+        padding: 3px;
+        padding-left: 15px; }
+    main #overview .apply {
       height: 100px;
-      background-color: white;
-      opacity: 0.7;
-      margin: 0;
-      font-size: 1.4em;
-      line-height: 1.3em;
-      padding: 3px;
-      padding-left: 15px; }
-  main #overview .apply {
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    main #overview .apply .btn-primary {
-      background-color: #80d1c7;
-      color: #272465;
-      text-decoration: none; }
-
-main #program-information {
-  margin: 1em; }
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      main #overview .apply .btn-primary {
+        background-color: #80d1c7;
+        color: #272465;
+        text-decoration: none; }
   main #program-information h1 {
     background-color: #272465;
     color: white;
@@ -99,17 +99,16 @@ main #program-information {
     font-size: 1.3em;
     text-align: left;
     line-height: 50px;
-    padding: 0 10px; }
+    padding: 0 10px;
+    margin: 0; }
   main #program-information p {
     color: #55557a;
-    font-size: 1em; }
+    font-size: 1em;
+    margin: 1em; }
   main #program-information p:nth-child(3) {
     color: gray;
     margin-top: 2em;
     line-height: 2em; }
-
-main #careers-pathways {
-  margin: 1em; }
   main #careers-pathways h1 {
     background-color: #272465;
     color: white;
@@ -117,22 +116,23 @@ main #careers-pathways {
     font-size: 1.3em;
     text-align: left;
     line-height: 50px;
-    padding: 0 10px; }
+    padding: 0 10px;
+    margin: 0; }
   main #careers-pathways h2 {
     color: black;
     font-size: 1em;
     font-weight: bold;
+    margin: 1em;
     margin-top: 1em;
     margin-bottom: 0; }
   main #careers-pathways p {
     color: #55557a;
-    font-size: 1em; }
+    font-size: 1em;
+    margin: 1em; }
   main #careers-pathways ol li {
     color: #55557a;
-    font-size: 1em; }
-
-main #courses {
-  margin: 1em; }
+    font-size: 1em;
+    margin: 1em; }
   main #courses h1 {
     background-color: #272465;
     color: white;
@@ -140,7 +140,8 @@ main #courses {
     font-size: 1.3em;
     text-align: left;
     line-height: 50px;
-    padding: 0 10px; }
+    padding: 0 10px;
+    margin: 0; }
   main #courses .table {
     width: 100%;
     margin: auto; }
@@ -150,9 +151,6 @@ main #courses {
       background-color: #80d1c7; }
     main #courses .table tbody {
       line-height: 1; }
-
-main #requirements {
-  margin: 1em; }
   main #requirements h1 {
     background-color: #272465;
     color: white;
@@ -160,19 +158,19 @@ main #requirements {
     font-size: 1.3em;
     text-align: left;
     line-height: 50px;
-    padding: 0 10px; }
+    padding: 0 10px;
+    margin: 0; }
   main #requirements h2 {
     color: black;
     font-size: 1em;
     font-weight: bold;
+    margin: 1em;
     margin-top: 1em;
     margin-bottom: 0; }
   main #requirements ul li {
     color: #55557a;
-    font-size: 1em; }
-
-main #fee-expenses {
-  margin: 1em; }
+    font-size: 1em;
+    margin: 1em; }
   main #fee-expenses h1 {
     background-color: #272465;
     color: white;
@@ -180,64 +178,66 @@ main #fee-expenses {
     font-size: 1.3em;
     text-align: left;
     line-height: 50px;
-    padding: 0 10px; }
+    padding: 0 10px;
+    margin: 0; }
   main #fee-expenses h2 {
     color: black;
     font-size: 1em;
     font-weight: bold;
+    margin: 1em;
     margin-top: 1em;
     margin-bottom: 0; }
   main #fee-expenses p {
     color: #55557a;
-    font-size: 1em; }
+    font-size: 1em;
+    margin: 1em; }
 
 @media (min-width: 768px) {
-  main {
-    margin: 0 2em; }
-    main #overview {
-      margin: 1em;
+  main #overview {
+    margin: 1em;
+    display: flex;
+    height: auto; }
+    main #overview #banner {
       display: flex;
-      height: auto; }
-      main #overview #banner {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 45%;
-        height: 300px;
-        margin-left: 5%;
-        overflow: hidden; }
-        main #overview #banner img {
-          height: 100%;
-          width: auto; }
-      main #overview #describe {
-        display: flex;
-        flex-direction: column;
-        padding: 0 3%;
-        width: 60%; }
-        main #overview #describe .text {
-          background-image: none;
-          height: 200px;
-          padding-top: 15%; }
-          main #overview #describe .text p {
-            height: 100px;
-            background-color: white;
-            opacity: 0.7;
-            margin: 0;
-            font-size: 1.4em;
-            line-height: 1.3em;
-            padding: 3px;
-            padding-left: 15px;
-            height: auto; }
-        main #overview #describe .apply {
-          height: 80px; }
-          main #overview #describe .apply .btn-primary {
-            width: 50%;
-            text-align: center; }
-    main #program-information h1 {
-      background-color: #272465;
-      color: white;
-      height: 50px;
-      font-size: 1.3em;
-      text-align: left;
-      line-height: 50px;
-      padding: 0 10px; } }
+      justify-content: center;
+      align-items: center;
+      width: 45%;
+      height: 300px;
+      margin-left: 5%;
+      overflow: hidden; }
+      main #overview #banner img {
+        height: 100%;
+        width: auto; }
+    main #overview #describe {
+      display: flex;
+      flex-direction: column;
+      padding: 0 3%;
+      width: 60%; }
+      main #overview #describe .text {
+        background-image: none;
+        height: 200px;
+        padding-top: 15%; }
+        main #overview #describe .text p {
+          height: 100px;
+          background-color: white;
+          opacity: 0.7;
+          margin: 0;
+          font-size: 1.4em;
+          line-height: 1.3em;
+          padding: 3px;
+          padding-left: 15px;
+          height: auto; }
+      main #overview #describe .apply {
+        height: 80px; }
+        main #overview #describe .apply .btn-primary {
+          width: 50%;
+          text-align: center; }
+  main #program-information h1 {
+    background-color: #272465;
+    color: white;
+    height: 50px;
+    font-size: 1.3em;
+    text-align: left;
+    line-height: 50px;
+    padding: 0 10px;
+    margin: 0; } }
