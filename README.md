@@ -5,7 +5,7 @@ nav#2 overview page </br>
 nav#3 course schedule page(with 3 more detailed pages in drop down menu) </br>
           -dropdown#1 information page for web prodyuction, </br>
           -dropdown#2information page for server-side development, </br>
-          -dropdown#3information page for motion graphic </br>  
+          -dropdown#3information page for motion graphic
 nav#4 professor list page (with 3 more detailed pages in drop down menu) </br>
           -dropdown#1information page for Robert L. McKenney,  </br>
           -dropdown#2information page for Michael Alan Eisenbraun, </br>
