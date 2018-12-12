@@ -1,32 +1,3 @@
-main {
-  margin: 0 auto; }
-  main #overview #describe {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 1920px;
-    height: 300px;
-    display: table-cell;
-    vertical-align: bottom; }
-    main #overview #describe p {
-      background-color: white;
-      opacity: 0.7;
-      margin: 0;
-      font-size: 1.5em;
-      line-height: 1.3em;
-      padding: 1rem 0;
-      padding-left: 15px; }
-
-@media screen and (min-width: 768px) {
-  main #overview #describe {
-    padding: 0;
-    vertical-align: -webkit-baseline-middle;
-    padding: 10% 20%; }
-    main #overview #describe p {
-      font-size: 2rem;
-      padding: 2rem;
-      text-align: center; } }
-
 #popup {
   position: fixed;
   width: 90%;
@@ -103,7 +74,7 @@ main {
     margin: 0; }
   main #program-information p {
     color: #55557a;
-    font-size: 1em;
+    font-size: 1.1rem;
     margin: 1em; }
   main #program-information p:nth-child(3) {
     color: gray;
@@ -127,11 +98,11 @@ main {
     margin-bottom: 0; }
   main #careers-pathways p {
     color: #55557a;
-    font-size: 1em;
+    font-size: 1.1rem;
     margin: 1em; }
   main #careers-pathways ol li {
     color: #55557a;
-    font-size: 1em;
+    font-size: 1.1rem;
     margin: 1em; }
   main #courses h1 {
     background-color: #272465;
@@ -169,7 +140,7 @@ main {
     margin-bottom: 0; }
   main #requirements ul li {
     color: #55557a;
-    font-size: 1em;
+    font-size: 1.1rem;
     margin: 1em; }
   main #fee-expenses h1 {
     background-color: #272465;
@@ -189,7 +160,7 @@ main {
     margin-bottom: 0; }
   main #fee-expenses p {
     color: #55557a;
-    font-size: 1em;
+    font-size: 1.1rem;
     margin: 1em; }
 
 @media (min-width: 768px) {
