@@ -1,5 +1,5 @@
-@import "global";
-@import "banner";
+@import 'global';
+@import 'banner';
 // mixin with h1 header
 @mixin heading1 {
   background-color: $darkblue;
@@ -9,11 +9,13 @@
   text-align: left;
   line-height: 50px;
   padding: 0 10px;
+  margin: 0;
 }
 @mixin heading2 {
   color: black;
   font-size: 1em;
   font-weight: bold;
+  margin: 1em;
   margin-top: 1em;
   margin-bottom: 0;
 }
@@ -30,6 +32,7 @@
 @mixin pbody2 {
   color: $bluegray;
   font-size: 1em;
+  margin: 1em;
 }
 
 @mixin pbody768 {
@@ -79,6 +82,8 @@
 }
 
 main {
+  max-width: 1240px;
+  margin: 0 auto;
   #overview {
     height: 400px;
     #banner {
@@ -86,7 +91,7 @@ main {
     }
     #describe {
       .text {
-        background-image: url("../img/IMD-banner.jpg");
+        background-image: url('../img/IMD-banner.jpg');
         background-size: 160% auto;
         background-position: center;
         height: 300px;
@@ -111,7 +116,6 @@ main {
     }
   }
   #program-information {
-    margin: 1em;
     h1 {
       @include heading1();
     }
@@ -125,7 +129,6 @@ main {
     }
   }
   #careers-pathways {
-    margin: 1em;
     h1 {
       @include heading1();
     }
@@ -142,7 +145,6 @@ main {
     }
   }
   #courses {
-    margin: 1em;
     h1 {
       @include heading1();
     }
@@ -161,7 +163,6 @@ main {
     }
   }
   #requirements {
-    margin: 1em;
     h1 {
       @include heading1();
     }
@@ -175,7 +176,6 @@ main {
     }
   }
   #fee-expenses {
-    margin: 1em;
     h1 {
       @include heading1();
     }
@@ -190,7 +190,6 @@ main {
 
 @media (min-width: 768px) {
   main {
-    margin: 0 2em;
     #overview {
       margin: 1em;
       display: flex;
