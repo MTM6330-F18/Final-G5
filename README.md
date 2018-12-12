@@ -11,7 +11,9 @@ nav#4 professor list page (with 3 more detailed pages in drop down menu) </br>
           -dropdown#2information page for Michael Alan Eisenbraun, </br>
           -dropdown#3information page for Hussein Tayran</br> 
           
-we use bootstrap to create the navigation and jquary for 
+we use 
+bootstrap to create the navigation
+jquary for apply button at the banner part of overview page and level choose button at the #course of overview page.
 
 Everyone in our team worked on her own branch. But when we started merge the branch, we got some problems and may merge in the wrong way, after research we have merged correctly now. </br>
 After every member pushed her part to github,the team leader has organized the code to make it more readable and clean, and  other team members help to do the user testing to check the problems of the website, so we can correct it in time.
