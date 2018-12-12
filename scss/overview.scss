@@ -1,51 +1,122 @@
-@import '../scss/global.scss';
+@import "global";
+@import "banner";
+// mixin with h1 header
+@mixin heading1 {
+  background-color: $darkblue;
+  color: white;
+  height: 50px;
+  font-size: 1.3em;
+  text-align: left;
+  line-height: 50px;
+  padding: 0 10px;
+}
+@mixin heading2 {
+  color: black;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+@mixin pbody1 {
+  height: 100px;
+  background-color: white;
+  opacity: 0.7;
+  margin: 0;
+  font-size: 1.4em;
+  line-height: 1.3em;
+  padding: 3px;
+  padding-left: 15px;
+}
+@mixin pbody2 {
+  color: $bluegray;
+  font-size: 1em;
+}
+
+@mixin pbody768 {
+  color: $bluegray;
+  font-size: 1.2em;
+}
+#popup {
+  position: fixed;
+  width: 90%;
+  height: 70%;
+  margin-top: 1%;
+  margin-left: 5%;
+  padding: 1em;
+  box-shadow: 5px 5px 5px gray;
+  z-index: 99;
+  background-color: white;
+  border: solid 1px gray;
+  animation: 1s scale;
+  @keyframes scale {
+    0% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  #close {
+    background-color: gray;
+    color: white;
+    float: right;
+  }
+
+  #around {
+    clear: left;
+    color: darkslategrey;
+    font-size: 1.2rem;
+    font-family: Noteworthy;
+    img {
+      width: 100%;
+      box-shadow: 5px 5px 5px gray;
+    }
+    p {
+      padding: 0.3em;
+    }
+  }
+}
+
 main {
   #overview {
     height: 400px;
-
+    #banner {
+      display: none;
+    }
     #describe {
-      background-image: url('../img/IMD-banner.jpg');
-      background-size: 140% auto;
-      background-position: center;
-      height: 300px;
-      display: table-cell;
-      vertical-align: bottom;
-      p {
-        height: 100px;
-        background-color: white;
-        opacity: 0.7;
-        margin: 0;
-        font-size: 1.5em;
-        line-height: 1.3em;
-        padding: 3px;
-        padding-left: 15px;
+      .text {
+        background-image: url("../img/IMD-banner.jpg");
+        background-size: 160% auto;
+        background-position: center;
+        height: 300px;
+        display: table-cell;
+        vertical-align: bottom;
+        p {
+          @include pbody1();
+        }
       }
     }
-    div {
+    .apply {
       height: 100px;
       display: flex;
       align-items: center;
       justify-content: center;
+
       .btn-primary {
         background-color: $mintgreen;
         color: $darkblue;
+        text-decoration: none;
       }
     }
   }
   #program-information {
     margin: 1em;
     h1 {
-      background-color: $darkblue;
-      color: white;
-      height: 50px;
-      font-size: 1.7em;
-      text-align: left;
-      line-height: 50px;
-      padding: 0 10px;
+      @include heading1();
     }
     p {
-      color: $bluegray;
-      font-size: 1.2em;
+      @include pbody2();
     }
     p:nth-child(3) {
       color: gray;
@@ -56,57 +127,117 @@ main {
   #careers-pathways {
     margin: 1em;
     h1 {
-      background-color: $darkblue;
-      color: white;
-      height: 50px;
-      font-size: 1.7em;
-      text-align: left;
-      line-height: 50px;
-      padding: 0 10px;
+      @include heading1();
     }
     h2 {
-      color: black;
-      font-size: 1.5em;
+      @include heading2();
     }
     p {
-      color: $bluegray;
-      font-size: 1.2em;
+      @include pbody2();
     }
     ol {
       li {
-        color: $bluegray;
-        font-size: 1.2em;
+        @include pbody2();
       }
     }
   }
   #courses {
     margin: 1em;
     h1 {
-      background-color: $darkblue;
-      color: white;
-      height: 50px;
-      font-size: 1.7em;
-      text-align: left;
-      line-height: 50px;
-      padding: 0 10px;
+      @include heading1();
     }
     .table {
-      thead:nth-child(1) {
+      width: 100%;
+      margin: auto;
+      .head1 {
         background-color: $verylightgreen;
+      }
+      .head2 {
+        background-color: $mintgreen;
+      }
+      tbody {
+        line-height: 1;
       }
     }
   }
-}
-.table {
-  width: 80% !important;
-  margin: auto;
-}
-.table-striped {
-  border: 1px solid #848484;
-  thead tr {
-    background-color: #7cc9bf !important;
+  #requirements {
+    margin: 1em;
+    h1 {
+      @include heading1();
+    }
+    h2 {
+      @include heading2();
+    }
+    ul {
+      li {
+        @include pbody2();
+      }
+    }
   }
-  tbody tr:nth-of-type(odd) {
-    background-color: #e0f1ed !important;
+  #fee-expenses {
+    margin: 1em;
+    h1 {
+      @include heading1();
+    }
+    h2 {
+      @include heading2();
+    }
+    p {
+      @include pbody2();
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    margin: 0 2em;
+    #overview {
+      margin: 1em;
+      display: flex;
+      height: auto;
+
+      #banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45%;
+        height: 300px;
+        margin-left: 5%;
+        overflow: hidden;
+
+        img {
+          height: 100%;
+          width: auto;
+        }
+      }
+      #describe {
+        display: flex;
+        flex-direction: column;
+        padding: 0 3%;
+        width: 60%;
+        .text {
+          background-image: none;
+          height: 200px;
+          padding-top: 15%;
+          p {
+            // width: 50%;
+            @include pbody1();
+            height: auto;
+          }
+        }
+        .apply {
+          height: 80px;
+          .btn-primary {
+            width: 50%;
+            text-align: center;
+          }
+        }
+      }
+    }
+    #program-information {
+      h1 {
+        @include heading1();
+      }
+    }
   }
 }

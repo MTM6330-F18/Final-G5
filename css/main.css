@@ -6401,22 +6401,22 @@ footer {
     margin: 0 auto; }
     footer #pictures img {
       display: block;
-      margin: 20px auto; }
+      margin: 5% auto;
+      width: 50%; }
     footer #pictures #social {
       display: flex;
-      justify-content: space-between;
       height: 50px;
-      padding: 0 2rem;
-      margin: 10px auto;
-      width: 300px; }
+      padding: 0 20px;
+      margin-bottom: 10px; }
       footer #pictures #social .img-responsive {
         width: 50px;
+        height: auto;
         margin: 0 auto; }
   footer .copyright {
     font-size: 0.7em;
     margin-bottom: 0; }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   * {
     font-family: Helvetica; }
   header {
@@ -6465,7 +6465,7 @@ footer {
           z-index: 1;
           text-align: center; }
           header #nav #links #course a {
-            border: solid 1px gray; }
+            border-bottom: solid 1px gray; }
         header #nav #links #professor {
           display: none;
           position: absolute;
@@ -6474,7 +6474,7 @@ footer {
           top: 60px;
           z-index: 1; }
           header #nav #links #professor a {
-            border: solid 1px gray; }
+            border-bottom: solid 1px gray; }
   footer {
     display: block;
     box-sizing: border-box;

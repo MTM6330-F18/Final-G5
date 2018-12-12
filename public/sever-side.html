@@ -173,16 +173,45 @@
           
               <script>
                 $(document).ready(function() {
-                  $('.hamburger').click(function() {
-                    $('#links').slideToggle(500)
-                  })
-                  $('.course').mouseenter(function() {
-                    $('#course').slideToggle(500)
-                  })
-          
-                  $('.professor').mouseenter(function() {
-                    $('#professor').slideToggle(500)
-                  })
+                  if ($(window).width() > 753) {
+          // $("#links").css("display", "flex");
+          $(".course").mouseenter(function() {
+            $("#course").fadeIn();
+          });
+          $("#course").mouseenter(function() {
+            $("#course").fadeIn();
+          });
+          $(".course").mouseleave(function() {
+            $("#course").fadeOut();
+          });
+          $("#course").mouseleave(function() {
+            $("#course").fadeOut();
+          });
+
+          $(".professor").mouseenter(function() {
+            $("#professor").fadeIn();
+          });
+          $("#professor").mouseenter(function() {
+            $("#professor").fadeIn();
+          });
+          $(".professor").mouseleave(function() {
+            $("#professor").fadeOut();
+          });
+          $("#professor").mouseleave(function() {
+            $("#professor").fadeOut();
+          });
+        } else {
+          // $("#links").css("display", "none");
+          $(".hamburger").click(function() {
+            $("#links").fadeIn(500);
+          });
+          $("#links").mouseenter(function() {
+            $("#links").fadeIn(500);
+          });
+          $("#links").mouseleave(function() {
+            $("#links").fadeOut(500);
+          });
+        }
                 })
               </script>
   </body>

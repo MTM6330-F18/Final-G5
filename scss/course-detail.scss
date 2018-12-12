@@ -1,13 +1,13 @@
-@import '../node_modules/bootstrap/scss/bootstrap';
-@import 'global';
-@import 'banner';
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "global";
+@import "banner";
 * {
   font-size: 1rem;
 }
 main {
   #overview {
     #describe {
-      background-image: url('https://www.indianic.com/wp-content/uploads/2016/07/xwebdevelopment-bg.jpg.pagespeed.ic.XvNIZ7eeOl.jpg');
+      background-image: url("https://www.indianic.com/wp-content/uploads/2016/07/xwebdevelopment-bg.jpg.pagespeed.ic.XvNIZ7eeOl.jpg");
     }
   }
   section {

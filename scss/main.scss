@@ -1,7 +1,7 @@
 // insert bootstrap
-@import '../node_modules/bootstrap/scss/bootstrap';
+@import "../node_modules/bootstrap/scss/bootstrap";
 
-@import 'global';
+@import "global";
 
 // whole page
 * {
@@ -116,18 +116,18 @@ footer {
 
     img {
       display: block;
-      margin: 20px auto;
+      margin: 5% auto;
+
+      width: 50%;
     }
     #social {
       display: flex;
-      justify-content: space-between;
       height: 50px;
-      padding: 0 2rem;
-      margin: 10px auto;
-      width: 300px;
+      padding: 0 20px;
+      margin-bottom: 10px;
       .img-responsive {
         width: 50px;
-
+        height: auto;
         margin: 0 auto;
       }
     }
@@ -138,7 +138,7 @@ footer {
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   // whole page
   * {
     font-family: $font-stack;
@@ -201,7 +201,7 @@ footer {
           z-index: 1;
           text-align: center;
           a {
-            border: solid 1px gray;
+            border-bottom: solid 1px gray;
           }
         }
         #professor {
@@ -212,12 +212,13 @@ footer {
           top: 60px;
           z-index: 1;
           a {
-            border: solid 1px gray;
+            border-bottom: solid 1px gray;
           }
         }
       }
     }
   }
+
   // footer
   footer {
     display: block;

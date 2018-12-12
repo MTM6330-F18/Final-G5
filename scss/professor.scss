@@ -1,13 +1,13 @@
-@import '../node_modules/bootstrap/scss/bootstrap';
-@import 'banner';
-@import 'global';
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "banner";
+@import "global";
 * {
   font-size: 1rem;
 }
 main {
   #overview {
     #describe {
-      background-image: url('../img/professorbanner.jpg');
+      background-image: url("../img/professorbanner.jpg");
     }
   }
   .mainContainer {
