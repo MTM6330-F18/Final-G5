@@ -6313,8 +6313,7 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 * {
-  font-family: Helvetica;
-  font-size: 1rem; }
+  font-family: Helvetica; }
 
 header {
   display: flex;

@@ -140,13 +140,7 @@
         } else {
           // $("#links").css("display", "none");
           $(".hamburger").click(function() {
-            $("#links").fadeIn(500);
-          });
-          $("#links").mouseenter(function() {
-            $("#links").fadeIn(500);
-          });
-          $("#links").mouseleave(function() {
-            $("#links").fadeOut(500);
+            $("#links").toggle();
           });
         }
       })
