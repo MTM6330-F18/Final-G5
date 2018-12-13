@@ -478,41 +478,39 @@
     <script>
       $(document).ready(function() {
         // nav bar
-        $(window).resize(function() {
-          if ($(window).width() > 753) {
-            // $("#links").css("display", "flex");
-            $(".course").mouseenter(function() {
-              $("#course").fadeIn();
-            });
-            $("#course").mouseenter(function() {
-              $("#course").fadeIn();
-            });
-            $(".course").mouseleave(function() {
-              $("#course").fadeOut();
-            });
-            $("#course").mouseleave(function() {
-              $("#course").fadeOut();
-            });
+        if ($(window).width() > 753) {
+          // $("#links").css("display", "flex");
+          $(".course").mouseenter(function() {
+            $("#course").fadeIn();
+          });
+          $("#course").mouseenter(function() {
+            $("#course").fadeIn();
+          });
+          $(".course").mouseleave(function() {
+            $("#course").fadeOut();
+          });
+          $("#course").mouseleave(function() {
+            $("#course").fadeOut();
+          });
 
-            $(".professor").mouseenter(function() {
-              $("#professor").fadeIn();
-            });
-            $("#professor").mouseenter(function() {
-              $("#professor").fadeIn();
-            });
-            $(".professor").mouseleave(function() {
-              $("#professor").fadeOut();
-            });
-            $("#professor").mouseleave(function() {
-              $("#professor").fadeOut();
-            });
-          } else {
-            // $("#links").css("display", "none");
-            $(".hamburger").click(function() {
-              $("#links").toggle();
-            });
-          }
-        });
+          $(".professor").mouseenter(function() {
+            $("#professor").fadeIn();
+          });
+          $("#professor").mouseenter(function() {
+            $("#professor").fadeIn();
+          });
+          $(".professor").mouseleave(function() {
+            $("#professor").fadeOut();
+          });
+          $("#professor").mouseleave(function() {
+            $("#professor").fadeOut();
+          });
+        } else {
+          // $("#links").css("display", "none");
+          $(".hamburger").click(function() {
+            $("#links").toggle();
+          });
+        }
         // courses form
         var obj = $("#level");
 
