@@ -24,42 +24,50 @@
           <a href="./overview.html" class="btn">OVERVIEW</a>
           <a href="./courses.html" class="course btn"> COURSES</a>
           <div id="course">
-            <a href="./course-detail.html" class="btn-sm"
+            <a href="./sever-side.html" class="btn-sm"
               >Sever-side Web <br />
               Development</a
             >
-            <a href="./course-detail.html" class="btn-sm">Web Production</a>
-            <a href="./course-detail.html" class="btn-sm">Motion Graphics</a>
+            <a href="./webproduction.html" class="btn-sm">Web Production</a>
+            <a href="./motiongraphics.html" class="btn-sm">Motion Graphics</a>
           </div>
           <a href="./professor.html" class="professor btn">PROFESSORS</a>
           <div id="professor">
-            <a href="./professor-detail.html" class="btn-sm"
+            <a href="./professor-detail-michael.html" class="btn-sm"
               >Michael Alan <br />
               Eisenbraun</a
             >
-            <a href="./professor-detail.html" class="btn-sm"
+            <a href="./professor-detail-robert.html" class="btn-sm"
               >Robert L. McKenney</a
             >
-            <a href="./professor-detail.html" class="btn-sm">Hussein Tayran</a>
+            <a href="./professor-detail-hussein.html" class="btn-sm"
+              >Hussein Tayran</a
+            >
           </div>
         </div>
       </div>
     </header>
     <main>
-      <div id="overview">
-        <div id="banner">
-          <img class="img" src="../img/IMD-banner.jpg" alt="Responsive image" />
-        </div>
-        <div id="describe">
-          <div class="text">
-            <p>
-              Learn to create engaging digital media with audio, video,
-              graphical, and web technologies.
-            </p>
+      <div id="background-overview">
+        <div id="overview">
+          <div id="banner">
+            <img
+              class="img"
+              src="../img/IMD-banner.jpg"
+              alt="Responsive image"
+            />
           </div>
+          <div id="describe">
+            <div class="text">
+              <p>
+                Learn to create engaging digital media with audio, video,
+                graphical, and web technologies.
+              </p>
+            </div>
 
-          <div class="apply">
-            <a id="apply" href="#" class=" btn-primary btn-lg">Apply Now</a>
+            <div class="apply">
+              <a id="apply" href="#" class=" btn-primary btn-lg">Apply Now</a>
+            </div>
           </div>
         </div>
       </div>
@@ -523,14 +531,14 @@
           popUp.append(`<button id="close">X</button>`);
 
           popUp.append(` <form action="">
-                                                                                          First name:<br />
-                                                                                          <input type="text" name="firstname" value="" /> <br />
-                                                                                           Last name:<br />
-                                                                                          <input type="text" name="lastname" value="" /> <br /><br />
-                                                                                           Content:<br />
-                                                                                          <textarea id="content"></textarea> <br /><br />
-                                                                                          <input type="submit" value="Submit" />
-                                                                                          </form>`);
+                             First name:<br />
+                             <input type="text" name="firstname" value="" /> <br />
+                            Last name:<br />
+                              <input type="text" name="lastname" value="" /> <br /><br />
+                              Content:<br />
+                             <textarea id="content"></textarea> <br /><br />
+                             <input type="submit" value="Submit" />
+                             </form>`);
           popUp.show();
           $("#close").click(function() {
             popUp.hide();

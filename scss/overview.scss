@@ -1,5 +1,5 @@
-@import "global";
-@import "banner";
+@import 'global';
+//start with mobile version
 // mixin with h1 header
 @mixin heading1 {
   background-color: $darkblue;
@@ -9,17 +9,19 @@
   text-align: left;
   line-height: 50px;
   padding: 0 10px;
+  margin: 0;
 }
 @mixin heading2 {
   color: black;
   font-size: 1em;
   font-weight: bold;
+  margin: 1em;
   margin-top: 1em;
   margin-bottom: 0;
 }
 @mixin pbody1 {
   height: 100px;
-  background-color: white;
+  background-color: rgb(240, 240, 240);
   opacity: 0.7;
   margin: 0;
   font-size: 1.4em;
@@ -29,7 +31,8 @@
 }
 @mixin pbody2 {
   color: $bluegray;
-  font-size: 1em;
+  font-size: $p;
+  margin: 1em;
 }
 
 @mixin pbody768 {
@@ -79,39 +82,45 @@
 }
 
 main {
-  #overview {
-    height: 400px;
-    #banner {
-      display: none;
-    }
-    #describe {
-      .text {
-        background-image: url("../img/IMD-banner.jpg");
-        background-size: 160% auto;
-        background-position: center;
-        height: 300px;
-        display: table-cell;
-        vertical-align: bottom;
-        p {
-          @include pbody1();
+  #background-overview {
+    background-color: rgb(240, 240, 240);
+    // height: 400px;
+    #overview {
+      max-width: 1240px;
+      margin: 0 auto;
+      #banner {
+        display: none;
+      }
+      #describe {
+        .text {
+          background-image: url('../img/IMD-banner.jpg');
+          background-size: 160% auto;
+          background-position: center;
+          height: 300px;
+          display: table-cell;
+          vertical-align: bottom;
+          p {
+            @include pbody1();
+          }
         }
       }
-    }
-    .apply {
-      height: 100px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      .apply {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-      .btn-primary {
-        background-color: $mintgreen;
-        color: $darkblue;
-        text-decoration: none;
+        .btn-primary {
+          background-color: $mintgreen;
+          color: $darkblue;
+          text-decoration: none;
+        }
       }
     }
   }
   #program-information {
-    margin: 1em;
+    max-width: 1240px;
+    margin: 0 auto;
     h1 {
       @include heading1();
     }
@@ -125,7 +134,6 @@ main {
     }
   }
   #careers-pathways {
-    margin: 1em;
     h1 {
       @include heading1();
     }
@@ -142,7 +150,6 @@ main {
     }
   }
   #courses {
-    margin: 1em;
     h1 {
       @include heading1();
     }
@@ -161,7 +168,6 @@ main {
     }
   }
   #requirements {
-    margin: 1em;
     h1 {
       @include heading1();
     }
@@ -175,7 +181,6 @@ main {
     }
   }
   #fee-expenses {
-    margin: 1em;
     h1 {
       @include heading1();
     }
@@ -187,49 +192,50 @@ main {
     }
   }
 }
-
+//desktop version
 @media (min-width: 768px) {
   main {
-    margin: 0 2em;
-    #overview {
-      margin: 1em;
-      display: flex;
-      height: auto;
-
-      #banner {
+    #background-overview {
+      #overview {
+        // margin: 1em;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 45%;
-        height: 300px;
-        margin-left: 5%;
-        overflow: hidden;
+        height: auto;
 
-        img {
-          height: 100%;
-          width: auto;
-        }
-      }
-      #describe {
-        display: flex;
-        flex-direction: column;
-        padding: 0 3%;
-        width: 60%;
-        .text {
-          background-image: none;
-          height: 200px;
-          padding-top: 15%;
-          p {
-            // width: 50%;
-            @include pbody1();
-            height: auto;
+        #banner {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 45%;
+          height: 300px;
+
+          overflow: hidden;
+
+          img {
+            height: 100%;
+            width: auto;
           }
         }
-        .apply {
-          height: 80px;
-          .btn-primary {
-            width: 50%;
-            text-align: center;
+        #describe {
+          // display: flex;
+          // flex-direction: column;
+          // padding: 0 3%;
+          width: 60%;
+          .text {
+            background-image: none;
+            height: 200px;
+            padding-top: 15%;
+            p {
+              // width: 50%;
+              @include pbody1();
+              height: auto;
+            }
+          }
+          .apply {
+            height: 80px;
+            .btn-primary {
+              width: 50%;
+              text-align: center;
+            }
           }
         }
       }

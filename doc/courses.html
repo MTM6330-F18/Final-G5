@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>professor detail page</title>
-    <link rel="stylesheet" href="../css/professor-detail.css" />
+    <title>Courses page</title>
+    <link rel="stylesheet" href="../css/course.css" />
     <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body>
     <header>
       <div id="logo">
-        <a href="./home.html"> <img class="img-responsive" src="../img/LOGO2.png" alt="" /> </a>
+       <a href="./home.html"> <img class="img-responsive" src="../img/LOGO2.png" alt="" /></a>
       </div>
       <div id="nav">
         <input class="hamburger" type="checkbox" /> <span></span> <span></span>
@@ -23,8 +23,7 @@
           <div id="course">
             <a href="sever-side.html" class="btn-sm"
               >Sever-side Web <br />
-              Development</a
-            >
+              Development</a>
             <a href="webproduction.html" class="btn-sm">Web Production</a>
             <a href="motiongraphics.html" class="btn-sm">Motion Graphics</a>
           </div>
@@ -38,49 +37,98 @@
               >Robert L. McKenney</a
             >
             <a href="professor-detail-hussein.html" class="btn-sm"
-              >Hussein Tayran</a
-            >
+              >Hussein Tayran</a>
           </div>
         </div>
       </div>
     </header>
-
-    <div class="mainContainer">
-      <div class="profPicture">
-        <img src="../img/robert.jpeg" alt="Professor Robert L. McKenney" />
-      </div>
-      <div class="namePlusEmail">
-        <h1>Robert L. McKenney</h1>
-        <p class="centered">
-          Course: Web Production<br />
-          Email: mckennr@algonquincollege.com<br />
-          Twitter: @RLMcKenney<br />
-          Github: rlmckenney<br />
-          Oﬃce: J313 - by appointment only<br />
-        </p>
-      </div>
-       <p>
-          Robert McKenney is an entrepreneur with over 25 years of experience in
-          successfully using technology to ﬁnd creative and elegant solutions to
-          complex business problems. He has been hands-on in developing websites
-          and web applications since 1994.</br>
+    <main>
+      <!---The banner part-->
+        <div id="overview">
+            <div id="describe">
+              <p>
+                  Courses schedule</br>
+                  Interactive media design <br>
+                  Fall 2018  </p>
+            </div>           
+          </div>
+          <!---The main content-->
+        <div class="course_list">
+          <section class="web production">
+            <div class="title">
+              <h2>Web production</h2>
+               <a href="webproduction.html" class="more">More info ></a>
+            </div> 
+           <div class="schedule">
+              <h3>Schedule</h3>
+              <p>
+                Section 010: Wednesday 13:00 - 16:00 </br>
+                Section 020: Tuesday 9:00 -
+                12:00 </br>
+                Section 030: Tuesday 12:00 - 15:00 </br>Location: Room T232
+              </p>
+            </div>
+        </section>
+        <section class="Server-side development">
+            <div class="title">
+                <h2>Server-side development</h2>
+                <a href="sever-side.html" class="more" >More info ></a>
+            </div> 
+          <div class="schedule">
+              <h3>Schedule</h3>
+            <p>
+                Section 310: Fridays 8:00 AM - 11:00 AM</br>
+                Section 320: Mondays 8:00 AM - 11:00 AM</br>
+                Section 330: Wednesdays 9:30 AM - 11:00 AM</br>
+                Location: Room T232 </p>
+          </div>
+        </section>
+        <section class="Motion graphic">
+            <div class="title">
+                <h2>Motion graphic</h2>
+                  <a href="motiongraphics.html" class="more" >More info ></a>
+            </div> 
+          <div class="schedule">
+              <h3>Schedule</h3>
+            <p>
+                Section 010: Wednesday 09:00 - 12:00
+                <br>Section 020: Tuesday 13:00 - 16:00
+                <br>Section 030: Tuesday 09:00 - 12:00
+                <br>Location: Room T308
+                </p>
+          </div>
+        </section>
+        
+        <section class="Applied project">
+            <div class="title">
+                <h2>Applied project</h2>
+            </div> 
+          <div class="schedule">
+              <h3>Schedule</h3>
+            <p>
+                Section 010: Tuesday 8:30 - 12:30 </br>
+                Section 020: Tuesday 9:00 -
+                12:00 </br>
+                Section 030: Tuesday 12:00 - 15:00 </br>Location: Room T229
+            </p>
+          </div>
+        </section>
+        <section class="Project management">
+            <div class="title">
+                <h2>Project management</h2>            </div> 
+          <div class="schedule">
+              <h3>Schedule</h3>
           
-          Robert can approach any given challenge with a strong mix of both
-          creative and technical skills, leading to a more well-rounded,
-          customer experience focused solution. Robert’s infectious enthusiasm
-          helps him communicate that vision effectively with many different
-          audiences.</br>
-          Robert McKenney can quickly see the broad strategic vision and then
-          effectively articulate that in terms of speciﬁc implementation details
-          relevant to each team member – helping them to understand the
-          importance of their contribution to the whole project.<br />
-          A love of life-long learning drives Robert to continually expand his
-          knowledge of the ever-changing information technology industry. And,
-          he is equally delighted by the opportunity to learn more about his
-          client’s business domain so that he can better serve them.
-        </p>
-      
-    </div>
+            <p>
+                Section 010: Monday 8:00 - 10:00 </br>
+                Section 020: Monday 9:00 -
+                12:00 </br>
+                Section 030: Tuesday 12:00 - 15:00 </br>Location: Room T229
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
     <footer>
         <p id="c-info">
           Algonquin College <br />
