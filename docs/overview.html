@@ -478,39 +478,41 @@
     <script>
       $(document).ready(function() {
         // nav bar
-        if ($(window).width() > 753) {
-          // $("#links").css("display", "flex");
-          $(".course").mouseenter(function() {
-            $("#course").fadeIn();
-          });
-          $("#course").mouseenter(function() {
-            $("#course").fadeIn();
-          });
-          $(".course").mouseleave(function() {
-            $("#course").fadeOut();
-          });
-          $("#course").mouseleave(function() {
-            $("#course").fadeOut();
-          });
+        $(window).resize(function() {
+          if ($(window).width() > 753) {
+            // $("#links").css("display", "flex");
+            $(".course").mouseenter(function() {
+              $("#course").fadeIn();
+            });
+            $("#course").mouseenter(function() {
+              $("#course").fadeIn();
+            });
+            $(".course").mouseleave(function() {
+              $("#course").fadeOut();
+            });
+            $("#course").mouseleave(function() {
+              $("#course").fadeOut();
+            });
 
-          $(".professor").mouseenter(function() {
-            $("#professor").fadeIn();
-          });
-          $("#professor").mouseenter(function() {
-            $("#professor").fadeIn();
-          });
-          $(".professor").mouseleave(function() {
-            $("#professor").fadeOut();
-          });
-          $("#professor").mouseleave(function() {
-            $("#professor").fadeOut();
-          });
-        } else {
-          // $("#links").css("display", "none");
-          $(".hamburger").click(function() {
-            $("#links").toggle();
-          });
-        }
+            $(".professor").mouseenter(function() {
+              $("#professor").fadeIn();
+            });
+            $("#professor").mouseenter(function() {
+              $("#professor").fadeIn();
+            });
+            $(".professor").mouseleave(function() {
+              $("#professor").fadeOut();
+            });
+            $("#professor").mouseleave(function() {
+              $("#professor").fadeOut();
+            });
+          } else {
+            // $("#links").css("display", "none");
+            $(".hamburger").click(function() {
+              $("#links").toggle();
+            });
+          }
+        });
         // courses form
         var obj = $("#level");
 
@@ -531,14 +533,14 @@
           popUp.append(`<button id="close">X</button>`);
 
           popUp.append(` <form action="">
-                             First name:<br />
-                             <input type="text" name="firstname" value="" /> <br />
-                            Last name:<br />
-                              <input type="text" name="lastname" value="" /> <br /><br />
-                              Content:<br />
-                             <textarea id="content"></textarea> <br /><br />
-                             <input type="submit" value="Submit" />
-                             </form>`);
+                                   First name:<br />
+                                   <input type="text" name="firstname" value="" /> <br />
+                                  Last name:<br />
+                                    <input type="text" name="lastname" value="" /> <br /><br />
+                                    Content:<br />
+                                   <textarea id="content"></textarea> <br /><br />
+                                   <input type="submit" value="Submit" />
+                                   </form>`);
           popUp.show();
           $("#close").click(function() {
             popUp.hide();
